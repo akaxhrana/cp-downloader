@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "CP-DownlOader",
+    "description": "Makes the required .cpp file!",
+    "version": "1.0",
+    "permissions": [
+        "tabs"
+    ],
+
+    "icons": { "16": "icon.png"},
+   
+    "background": {
+        "service_worker": "background.js"
+    } ,    
+   
+    "content_scripts": [
+        {
+          "matches": [
+            "https://codeforces.com/*"
+          ],
+          "js": ["content.js"]
+        }
+      ]
+}
