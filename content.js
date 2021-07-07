@@ -2,8 +2,13 @@ var urlPage = window.location.toString();
 urlPage = urlPage.replace("#",'')
 var array = urlPage.split("/");
 
-fileName = array[array.length -2] + array[array.length-1] + "-codeforces" + ".cpp"
+// question name
+var questionName = document.querySelector('.title').textContent.split('.')[1];
+questionName = questionName.replaceAll(' ', '-');
 
+// file name
+fileName = array[array.length -2] + array[array.length-1] + questionName+ "-codeforces" + ".cpp"
+console.log(fileName)
 // get the title div from Codeforces.com
 var el1 = document.querySelector(".title")
 
