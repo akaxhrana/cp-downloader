@@ -7,7 +7,7 @@ var questionName = document.querySelector('.title').textContent.split('.')[1];
 questionName = questionName.replaceAll(' ', '');
 
 // file name
-fileName = array[array.length -2] + (array[array.length-1]).toUpperCase() +"-" + questionName+ "-codeforces" + ".cpp"
+fileName = array[array.length -2] + (array[array.length-1]).toUpperCase() +"-" + questionName + ".cpp"
 console.log(fileName)
 // get the title div from Codeforces.com
 var el1 = document.querySelector(".title")
