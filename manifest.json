@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "CP-DownlOader",
-    "description": "Makes the required .cpp file!",
+    "name": "CP-Downloader",
+    "description": "Makes the required .cpp file for the codeforces question!",
     "version": "1.1",
     "permissions": [
         "tabs"
